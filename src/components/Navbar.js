@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 //useSelector state'ler arası bize veri akışını kolay bir şekilde sağlıyor.Örneğin cartSlice componentinden istediğimiz verileri burada kullanabiliriz useSelector sayesinde.
 
 const Navbar = () => {
-  const amount = useSelector((store) => store.cart);
+  const amount = useSelector((store) => store.cart.amount);
   return (
     <nav>
       <div className="nav-center">
